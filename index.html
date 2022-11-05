@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LorenzoDev</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --blue: #224C8D;
+            --bg-secondary: #FFFFFF;
+            --text-menu: #FFFFFF;
+            --title-one: #FFFFFF;
+            --title-two: #000000;
+            --box-bottom: #969696;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .bg-blue-custom {
+            background: var(--blue);
+        }
+
+        .bg-white-custom {
+            background: var(--bg-secondary);
+        }
+
+        a.nav-link {
+            color: var(--text-menu);
+            padding: 10px;
+        }
+
+        img.img-home {
+            width: 100%;
+            height: 100vh;
+        }
+
+        p.title {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: -0.015em;
+            color: var(--text-menu);
+        }
+
+        p.title-two {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: -0.015em;
+            color: #000000;
+        }
+
+        p.paragraph {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: -0.015em;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        p.paragraph-two {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: -0.015em;
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+        .aboutme-img {
+            height: 80%
+        }
+
+        footer .contenedor {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-blue-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/logos/lorenzodev.png" alt="Logo" width="150"
+                        class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portafolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="slider-home">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="developer_backend.jpg"" class=" img-home alt="FullStack Developer">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-me bg-blue-custom py-5 px-5">
+            <div class="row w-100">
+                <div class="col-lg-6">
+                    <img src="./assets/img/computadoras.png" class="rounded mx-auto d-block aboutme-img" alt="Sobre mí">
+                </div>
+                <div class="description col-lg-6 py-5">
+                    <p class="title text-start text-break px-5">Sobre mí</p>
+                    <p class="paragraph text-start text-break px-5">Mi nombre es Lorenzo Rojo y soy desarrollador de
+                        páginas web. Tengo la experiencia en desarrollo de
+                        sitios web para pequeñas y medianas empresas, hasta tiendas en línea con carrito de compras.</p>
+                    <p class="paragraph text-start text-break px-5">Me aseguro de utilizar siempre las últimas
+                        tecnologías de desarrollo web: HTML5, CSS3, jQuery, Wordpress. Si necesitás una página web
+                        moderna, funcional, que se adapte a todos los diferentes tipos de pantalla, te aseguro que
+                        llegaste al lugar correcto.</p>
+                    <p class="paragraph text-start text-break px-5">Podes ponerte en contacto conmigo a través de
+                        Twitter, Linkedin o completando el formulario de contacto que se encuentra al final de mi sitio
+                        web.</p>
+                </div>
+            </div>
+        </section>
+        <section class="about-me bg-white-custom py-5 px-5">
+            <div class="row w-100">
+                <div class="description col-lg-6 py-5">
+                    <p class="title-two text-start text-break px-5">Sobre mí</p>
+                    <p class="paragraph-two text-start text-break px-5">Mi nombre es Lorenzo Rojo y soy desarrollador de
+                        páginas web. Tengo la experiencia en desarrollo de
+                        sitios web para pequeñas y medianas empresas, hasta tiendas en línea con carrito de compras.</p>
+                    <p class="paragraph-two text-start text-break px-5">Me aseguro de utilizar siempre las últimas
+                        tecnologías de desarrollo web: HTML5, CSS3, jQuery, Wordpress. Si necesitás una página web
+                        moderna, funcional, que se adapte a todos los diferentes tipos de pantalla, te aseguro que
+                        llegaste al lugar correcto.</p>
+                    <p class="paragraph-two text-start text-break px-5">Podes ponerte en contacto conmigo a través de
+                        Twitter, Linkedin o completando el formulario de contacto que se encuentra al final de mi sitio
+                        web.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./assets/img/computadoras.png" class="rounded mx-auto d-block aboutme-img" alt="Sobre mí">
+                </div>
+            </div>
+        </section>
+        <section class="jobs bg-blue-custom py-5 px-5">
+            <div>
+                <p class="title text-center text-break px-5">Trabajos realizados</p>
+                <p class="paragraph text-center text-break px-5">Hago muestra de algunos de mis trabajos realizados.</p>
+            </div>
+            <div class="carrousel-jobs">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="col-md-4 p-3" style="float:left;">
+                                <div class="card mb-3">
+                                <!-- <div class="card mb-3 " style="width: 18rem;"> -->
+                                    <img src="./assets/img/example.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <!-- <a href="#" class="btn">Go somewhere</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-3" style="float:left;">
+                                <div class="card mb-3">
+                                <!-- <div class="card mb-3 " style="width: 18rem;"> -->
+                                    <img src="./assets/img/example.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <!-- <a href="#" class="btn">Go somewhere</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 p-3" style="float:left;">
+                                <div class="card mb-3">
+                                <!-- <div class="card mb-3 " style="width: 18rem;"> -->
+                                    <img src="./assets/img/example.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make
+                                            up the bulk of the card's content.</p>
+                                        <!-- <a href="#" class="btn">Go somewhere</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-blue-custom">
+        <div class="contenedor">
+            <div class="redes">
+              <a href="#"><img src="./assets/icons/twitter.png" alt="imagen de twitter"></a>
+              <a href="#"><img src="./assets/icons/medium.png" alt="imagen de facebook"></a>
+              <a href="#"><img src="./assets/icons/github.png" alt="imagen de facebook"></a>
+              <a href="#"><img src="./assets/icons/linkedin.png" alt="imagen de facebook"></a>
+            </div>
+            <div class="parrafo">
+              <p>© 2022 LorenzoDev | Desarrollador Web </p>
+            </div>
+          </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
